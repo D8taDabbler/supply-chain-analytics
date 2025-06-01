@@ -1,113 +1,84 @@
-Supply Chain Analytics Portfolio
+# Andy Chiang - Supply Chain Analytics Portfolio
 
-Professional portfolio showcasing data analytics, AI-driven optimization, and supply chain management expertise.
+**Logistics & Supply Chain Specialist | Innovating Sustainability and Efficiency**
 
-Portfolio Highlights
+Professional portfolio showcasing AI-driven process optimization, supply chain analytics, and operational excellence in military and civilian environments.
 
-- Interactive Power BI Dashboards tracking KPIs against 2024 industry benchmarks
-- AI-Driven Demand Forecasting using Python and machine learning
-- Transportation Cost Analysis with SQL optimization
-- HubSpot API Integration for automated supplier management
-- Real Industry Data including $2.270/mile transportation costs and 8.5 inventory turnover targets
+## Professional Summary
 
-Current Industry Benchmarks (2024)
+Former U.S. Army Automated Logistics Specialist (2006-2013) with 7+ years of mission-critical operations experience, now specializing in AI-driven supply chain optimization and sustainability. Currently applying cutting-edge analytics as an AI Marketing Intern at HubSpot while building expertise in data-driven logistics transformation.
 
-Inventory Management
-- Average Inventory Turnover: 8.5 across all sectors
-- Target Accuracy Rate: 98%+ (vs. 58% of retailers below 80%)
-- Average Overstock Cost: $142,000 per business
+## Core Expertise & Experience
 
-Transportation & Logistics
-- Cost Per Mile: $2.270 (2024 record high)
-- On-Time Delivery Benchmark: 98%+ excellent, 95-98% average
-- Fuel Costs: $3.50/gallon average
+### Military & Operations Background
+- **7+ Years U.S. Army Service** - 92A Automated Logistics Specialist
+- **4+ Years International Experience** - Manufacturing Operations in Taiwan
+- **Mission-Critical Operations** - 99.8%+ accuracy in high-pressure environments
 
-Warehouse Operations
-- Space Cost: $8.31 per square foot (8.31% increase from 2022)
-- Labor Cost: $16.95/hour average
-- Order Picking Accuracy: 99.15% industry standard
+### Current Technology Focus
+- **AI Marketing Intern at HubSpot** (2025-Present)
+- **Google AI Essentials Certified** - Practical AI application
+- **Supply Chain Analytics** - KPIs, metrics, and optimization
+- **Data-Driven Decision Making** - Real-world client campaigns
 
-Technical Stack
+## 🛠 Technical Stack & Certifications
 
-Analytics & Visualization
-- **Power BI** - Interactive dashboards and KPI tracking
-- **Python** - Data analysis, machine learning, forecasting
-- **SQL** - Database optimization and complex queries
-- **Plotly/Matplotlib** - Data visualization and charts
+### AI & Analytics
+- **Google AI Essentials** (Coursera, 2024)
+- **HubSpot Reporting** (HubSpot Academy, 2024)
+- **Six Sigma Black Belt: Analytical Tools** (Skillsoft, 2024)
 
-AI & Machine Learning
-- Prophet - Time series forecasting
-- Pandas/NumPy - Data manipulation and analysis
-- Scikit-learn - Machine learning models
-- Google AI Tools - Process automation
+### Supply Chain Management
+- **CSCMP Supply Chain Foundations: Demand Planning** (CSCMP, 2024)
+- **Supply Chain Management KPIs: Metric Inventory Performance** (Udemy, 2024)
+- **Supply Chain Management Basics: Cutting Costs and Optimizing Delivery** (Skillsoft, 2024)
 
-Integration & APIs
-- HubSpot API - CRM integration and automation
-- Google Analytics - Cross-platform data integration
-- RESTful APIs - External data sources
+### Project Management
+- **Fundamentals of Agile Project Management** (PMI, 2024)
+- **Fundamentals of Predictive Project Management** (PMI, 2024)
+- **Generative AI Overview for Project Managers** (PMI, 2024)
 
-Professional Certifications (17 Total)
+### Leadership & Strategy
+- **WGU Certificate: Strategic Thinking and Innovation** (WGU, 2024)
 
-Google Certifications
-- Google Business Intelligence
-- Google Data Analytics  
-- Google AI Essentials
-- Google Cybersecurity
+## Academic Excellence
 
-HubSpot Certifications
-- HubSpot Marketing Hub Software
-- HubSpot Reporting
+**Western Governors University - Bachelor of Science, Business Administration (Management)**
 
-Supply Chain & Management
-- Supply Chain Management: KPIs, Metrics & Inventory (Udemy)
-- Supply Chain Principles (Coursera)
-- Leadership Strategies (WGU)
-- Strategic Thinking and Decision-Making (WGU)
+**Excellence Awards:**
+- **November 2024:** Logistics Management System Adaptation - praised for logical organization and innovative solutions
+- **October 2024:** Advanced understanding of emotional and cultural intelligence
 
-[View all 17 certifications →](https://github.com/D8taDabbler/supply-chain-analytics)
+## Featured Projects
 
-Academic Recognition
+### 1. HubSpot AI Campaign Optimization (2025)
+Real-world application of AI-driven tools for client campaigns, achieving 95%+ accuracy and 30% time reduction in manual processing.
 
-Western Governors University Excellence Awards:
-- November 2024: Logistics Management System Adaptation
-- October 2024: Emotional and Cultural Intelligence
+### 2. Supply Chain KPI Analytics Dashboard
+Interactive analytics tracking 2024 industry benchmarks including 8.5 inventory turnover targets and $2.270/mile transportation costs.
 
-Repository Structure
-supply-chain-analytics/
-├── index.html # Main portfolio page
-├── assets/
-│ ├── css/style.css # Complete styling
-│ ├── js/main.js # Interactive functionality
-│ └── data/ # Sample datasets
-├── projects/
-│ ├── inventory-dashboard/ # Power BI projects
-│ ├── transportation-analysis/ # SQL analysis
-│ ├── demand-forecasting/ # Python ML models
-│ └── hubspot-integration/ # API automation
-└── README.md
+### 3. Manufacturing Operations Excellence (Taiwan, 2017-2022)
+Led international manufacturing operations achieving 15% efficiency improvements through analytical process optimization.
 
-Project Highlights
+### 4. Military Logistics Systems Excellence (2006-2013)
+Operated mission-critical automated logistics systems maintaining 99.8%+ accuracy in high-pressure military environments.
 
-1. Supply Chain KPI Dashboard (Power BI)
-Real-time tracking of inventory turnover (8.5 benchmark), on-time delivery (98%+ target), and cost optimization against industry standards.
+## Connect
 
-2. AI-Driven Demand Forecasting (Python)
-Machine learning model achieving 95%+ accuracy in demand prediction, addressing the $142K average overstock challenge.
+- **LinkedIn:** [https://www.linkedin.com/in/a8c/](https://www.linkedin.com/in/a8c/)
+- **GitHub:** [@D8taDabbler](https://github.com/D8taDabbler)
+- **Portfolio:** [Live Site](https://d8tadabbler.github.io/supply-chain-analytics)
+- **Location:** New York City Metropolitan Area
 
-3. Transportation Cost Optimization (SQL)
-Analysis identifying 12% cost reduction opportunities against the $2.270/mile industry benchmark.
+## Current Focus
 
-4. HubSpot Supply Chain Integration (API)
-Automated supplier performance tracking with 30% reduction in manual processing time.
+Open to technology, manufacturing, or sustainable logistics roles where operational expertise meets innovation. Particularly interested in:
 
-Connect
-
-- LinkedIn: [Professional Profile](https://linkedin.com/in/your-profile)
-- GitHub: [@D8taDabbler](https://github.com/D8taDabbler)
-- Portfolio: [Live Site](https://d8tadabbler.github.io/supply-chain-analytics)
+- AI-driven supply chain transformation
+- Sustainable operations and ESG compliance
+- Data analytics and process optimization
+- Cross-functional collaboration in tech-forward environments
 
 ---
 
-About the Developer: Former Automated Logistics Specialist with military precision training, now specializing in AI-driven supply chain optimization and data analytics. Currently applying cutting-edge analytics through HubSpot internship while pursuing advanced certifications in business intelligence and machine learning.
-
-
+**Professional Philosophy:** Grounding technical skills in real-world problem-solving while balancing efficiency, sustainability, and ethical implementation.
