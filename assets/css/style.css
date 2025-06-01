@@ -462,14 +462,14 @@ section h2 {
     background: var(--gradient-primary);
     color: var(--text-color);
     position: relative;
-    min-height: 140px; /* Standardize header height */
+    min-height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .project-header h3 {
-    font-size: 1.4rem; /* Standardize font size */
+    font-size: 1.4rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
     color: var(--text-color);
@@ -492,8 +492,8 @@ section h2 {
 /* Fixed Project Metrics Alignment */
 .project-metrics {
     display: flex;
-    justify-content: center; /* Center the metrics */
-    align-items: baseline; /* Align by text baseline */
+    justify-content: center;
+    align-items: baseline;
     gap: 2.5rem;
     margin-top: 1.5rem;
     flex-wrap: wrap;
@@ -501,7 +501,7 @@ section h2 {
 
 .metric {
     text-align: center;
-    flex: 0 0 auto; /* Prevent flex stretching */
+    flex: 0 0 auto;
 }
 
 .metric-value {
@@ -669,7 +669,6 @@ section h2 {
 }
 
 /* University Logo Styling */
-/* University Logo Styling */
 .university-header {
     display: flex;
     align-items: center;
@@ -686,7 +685,7 @@ section h2 {
     border-radius: 12px;
     border: 2px solid var(--accent-color);
     padding: 8px;
-    background: var(--bg-color);
+    background: var(--text-color);
 }
 
 .university-info {
