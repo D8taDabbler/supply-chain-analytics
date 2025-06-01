@@ -117,6 +117,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    // Fade-in animation observer
+    const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in-section').forEach((section) => {
+        fadeObserver.observe(section);
+    });
+
+    // Enhanced click effects
+    document.querySelectorAll('.btn-effect').forEach(button => {
+        button.addEventListener('click', function(e) {
+            // Add a small delay to show the effect before navigation
+            if (this.href && !this.href.includes('#')) {
+                e.preventDefault();
+                setTimeout(() => {
+                    window.open(this.href, '_blank');
+                }, 200);
+            }
+        });
+    });
+    
     // Intersection Observer for animations
     const observerOptions = {
         threshold: 0.1,
@@ -191,29 +217,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-});
-// Fade-in animation observer
-const fadeObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.fade-in-section').forEach((section) => {
-    fadeObserver.observe(section);
-});
-
-// Enhanced click effects
-document.querySelectorAll('.btn-effect').forEach(button => {
-    button.addEventListener('click', function(e) {
-        // Add a small delay to show the effect before navigation
-        if (this.href && !this.href.includes('#')) {
-            e.preventDefault();
-            setTimeout(() => {
-                window.open(this.href, '_blank');
-            }, 200);
-        }
-    });
 });
