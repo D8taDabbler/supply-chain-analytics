@@ -21,7 +21,7 @@ Former U.S. Army Automated Logistics Specialist (2006-2013) with 7+ years of mis
 - **Supply Chain Analytics** - KPIs, metrics, and optimization
 - **Data-Driven Decision Making** - Real-world client campaigns
 
-## 🛠 Technical Stack & Certifications
+## Technical Stack & Certifications
 
 ### AI & Analytics
 - **Google AI Essentials** (Coursera, 2024)
