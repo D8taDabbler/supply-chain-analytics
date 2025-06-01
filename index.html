@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Chiang - Supply Chain Analytics Portfolio</title>
     <meta name="description" content="Logistics & Supply Chain Specialist specializing in AI-driven process optimization and sustainability. Former Automated Logistics Specialist with expertise in inventory management, transportation analytics, and data-driven decision making.">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <header class="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-brand">Andy Chiang</a>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Connect</a></li>
-            </ul>
+            <h1 class="nav-brand">Andy Chiang</h1>
+            <nav class="nav-menu">
+                <a href="#about" data-feather="user" class="nav-icon"></a>
+                <a href="#projects" data-feather="briefcase" class="nav-icon"></a>
+                <a href="#experience" data-feather="clock" class="nav-icon"></a>
+                <a href="#certifications" data-feather="award" class="nav-icon"></a>
+                <a href="#contact" data-feather="mail" class="nav-icon"></a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -45,15 +47,15 @@
                     </div>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn-primary">View Analytics Projects</a>
-                    <a href="https://www.linkedin.com/in/a8c/" class="btn-secondary">LinkedIn Profile</a>
+                    <a href="#projects" class="btn-primary btn-effect">View Analytics Projects</a>
+                    <a href="https://www.linkedin.com/in/a8c/" class="btn-secondary btn-effect">LinkedIn Profile</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about fade-in-section">
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
@@ -82,7 +84,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects fade-in-section">
         <div class="container">
             <h2>Featured Analytics Projects</h2>
             <div class="projects-grid">
@@ -113,8 +115,7 @@
                     </div>
                     
                     <div class="project-links">
-                        <a href="projects/inventory-dashboard/" class="btn-primary">View Dashboard</a>
-                        <a href="https://github.com/D8taDabbler/supply-chain-analytics" class="btn-secondary">GitHub Code</a>
+                        <a href="projects/inventory-dashboard/" class="btn-primary btn-effect">View Dashboard</a>
                     </div>
                 </div>
 
@@ -144,8 +145,8 @@
                     </div>
                     
                     <div class="project-links">
-                        <a href="projects/hubspot-ai/" class="btn-primary">View Project</a>
-                        <a href="https://github.com/D8taDabbler/hubspot-ai-optimization" class="btn-secondary">Code Repository</a>
+                        <a href="projects/hubspot-ai/" class="btn-primary btn-effect">View Project</a>
+                        <a href="https://github.com/D8taDabbler/hubspot-ai-optimization" class="btn-secondary btn-effect">Code Repository</a>
                     </div>
                 </div>
 
@@ -175,8 +176,8 @@
                     </div>
                     
                     <div class="project-links">
-                        <a href="projects/manufacturing-analytics/" class="btn-primary">View Analysis</a>
-                        <a href="https://github.com/D8taDabbler/manufacturing-optimization" class="btn-secondary">Project Files</a>
+                        <a href="projects/manufacturing-analytics/" class="btn-primary btn-effect">View Analysis</a>
+                        <a href="https://github.com/D8taDabbler/manufacturing-optimization" class="btn-secondary btn-effect">Project Files</a>
                     </div>
                 </div>
 
@@ -206,8 +207,8 @@
                     </div>
                     
                     <div class="project-links">
-                        <a href="projects/military-logistics/" class="btn-primary">View Framework</a>
-                        <a href="https://github.com/D8taDabbler/logistics-excellence" class="btn-secondary">Methodology</a>
+                        <a href="projects/military-logistics/" class="btn-primary btn-effect">View Framework</a>
+                        <a href="https://github.com/D8taDabbler/logistics-excellence" class="btn-secondary btn-effect">Methodology</a>
                     </div>
                 </div>
 
@@ -216,7 +217,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="experience fade-in-section">
         <div class="container">
             <h2>Professional Experience</h2>
             <div class="experience-timeline">
@@ -282,15 +283,20 @@
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
+    <section id="certifications" class="certifications fade-in-section">
         <div class="container">
             <h2>Professional Certifications & Education</h2>
             
             <div class="education-section">
                 <h3>Education</h3>
                 <div class="education-item">
-                    <h4>Bachelor of Science, Business Administration — Management</h4>
-                    <p class="institution">Western Governors University</p>
+                    <div class="university-header">
+                        <img src="assets/images/wgu-logo.png" alt="Western Governors University" class="university-logo">
+                        <div class="university-info">
+                            <h4>Bachelor of Science, Business Administration — Management</h4>
+                            <p class="institution">Western Governors University</p>
+                        </div>
+                    </div>
                     <div class="awards">
                         <div class="award">
                             <strong>Excellence Award (November 2024):</strong> Logistics Management System Adaptation - praised for logical organization and innovative solutions
@@ -309,7 +315,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact fade-in-section">
         <div class="container">
             <div class="contact-content">
                 <h2>Let's Connect</h2>
@@ -331,12 +337,12 @@
                 </div>
                 
                 <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/a8c/" class="contact-link">
-                        <span class="link-icon">🔗</span>
+                    <a href="https://www.linkedin.com/in/a8c/" class="contact-link btn-effect">
+                        <span class="link-icon" data-feather="linkedin"></span>
                         <span class="link-text">LinkedIn Profile</span>
                     </a>
-                    <a href="https://github.com/D8taDabbler" class="contact-link">
-                        <span class="link-icon">💻</span>
+                    <a href="https://github.com/D8taDabbler" class="contact-link btn-effect">
+                        <span class="link-icon" data-feather="github"></span>
                         <span class="link-text">GitHub Portfolio</span>
                     </a>
                 </div>
@@ -349,6 +355,14 @@
         </div>
     </section>
 
+    <script>
+        feather.replace({ 
+            'width': 24,
+            'height': 24,
+            'stroke-width': 1.5,
+            'color': '#3498db'
+        });
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
