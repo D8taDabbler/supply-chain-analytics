@@ -17,112 +17,77 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Populate certifications data with all 17 certifications
+    // Updated certifications data based on actual LinkedIn profile
     const certifications = [
         {
-            name: "Google Business Intelligence",
-            issuer: "Google",
-            logo: "G",
-            year: "2024",
-            category: "Data Analytics"
-        },
-        {
-            name: "Google Data Analytics",
-            issuer: "Google",
-            logo: "G",
-            year: "2024",
-            category: "Data Analytics"
-        },
-        {
             name: "Google AI Essentials",
-            issuer: "Google",
+            issuer: "Coursera",
             logo: "G",
             year: "2024",
             category: "AI & Machine Learning"
         },
         {
-            name: "Google Cybersecurity",
-            issuer: "Google",
-            logo: "G",
-            year: "2024",
-            category: "Cybersecurity"
-        },
-        {
-            name: "HubSpot Marketing Hub Software",
-            issuer: "HubSpot",
-            logo: "H",
-            year: "2024",
-            category: "Marketing Analytics"
-        },
-        {
             name: "HubSpot Reporting",
-            issuer: "HubSpot",
+            issuer: "HubSpot Academy",
             logo: "H",
             year: "2024",
             category: "Marketing Analytics"
+        },
+        {
+            name: "Fundamentals of Agile Project Management",
+            issuer: "Project Management Institute",
+            logo: "PMI",
+            year: "2024",
+            category: "Project Management"
         },
         {
             name: "Generative AI Overview for Project Managers",
-            issuer: "Project School",
-            logo: "PS",
+            issuer: "Project Management Institute",
+            logo: "PMI",
             year: "2024",
             category: "AI & Project Management"
         },
         {
-            name: "Fundamentals of Agile Project Management",
-            issuer: "Project School",
-            logo: "PS",
-            year: "2024",
-            category: "Project Management"
-        },
-        {
-            name: "Fundamentals of Predictive Project Management",
-            issuer: "Project School",
-            logo: "PS",
-            year: "2024",
-            category: "Project Management"
-        },
-        {
-            name: "Metrology Leading Teams",
-            issuer: "Metrology",
-            logo: "M",
-            year: "2024",
-            category: "Leadership"
-        },
-        {
-            name: "WGU Certificate: Leadership Strategies",
-            issuer: "Western Governors University",
-            logo: "WGU",
-            year: "2024",
-            category: "Leadership"
-        },
-        {
-            name: "WGU Certificate: Management Project and Technology Integration",
-            issuer: "Western Governors University",
-            logo: "WGU",
-            year: "2024",
-            category: "Management"
-        },
-        {
-            name: "WGU Certificate: Strategic Thinking and Decision-Making",
-            issuer: "Western Governors University",
-            logo: "WGU",
-            year: "2024",
-            category: "Strategic Management"
-        },
-        {
-            name: "Supply Chain Management: KPIs, Metrics, Inventory Performance",
+            name: "Supply Chain Management KPIs: Metric Inventory Performance",
             issuer: "Udemy",
             logo: "U",
             year: "2024",
             category: "Supply Chain"
         },
         {
-            name: "Supply Chain Principles",
-            issuer: "Coursera",
-            logo: "C",
+            name: "CSCMP Supply Chain Foundations: Demand Planning Professional Certificate",
+            issuer: "CSCMP",
+            logo: "CSCMP",
             year: "2024",
             category: "Supply Chain"
+        },
+        {
+            name: "WGU Certificate: Strategic Thinking and Innovation",
+            issuer: "Western Governors University",
+            logo: "WGU",
+            year: "2024",
+            category: "Strategic Management"
+        },
+        {
+            name: "Supply Chain Management Basics: Cutting Costs and Optimizing Delivery",
+            issuer: "Skillsoft",
+            logo: "S",
+            year: "2024",
+            category: "Supply Chain"
+        },
+        {
+            name: "Six Sigma Black Belt: Analytical Tools",
+            issuer: "Skillsoft",
+            logo: "S",
+            year: "2024",
+            category: "Quality Management"
+        },
+        {
+            name: "Fundamentals of Predictive Project Management",
+            issuer: "Project Management Institute",
+            logo: "PMI",
+            year: "2024",
+            category: "Project Management"
         }
     ];
     
@@ -133,21 +98,46 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="cert-logo">${cert.logo}</div>
                 <h4>${cert.name}</h4>
                 <p><span class="cert-issuer">${cert.issuer}</span> • ${cert.year}</p>
-                <div class="cert-category" style="margin-top: 0.5rem; padding: 0.2rem 0.8rem; background: var(--bg-color); border-radius: 12px; font-size: 0.8rem; color: var(--text-light);">${cert.category}</div>
+                <div class="cert-category">${cert.category}</div>
             </div>
         `).join('');
     }
     
-    // Navbar scroll effect
+    // Enhanced navbar scroll effect
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(44, 62, 80, 0.95)';
-            navbar.style.backdropFilter = 'blur(10px)';
+            navbar.style.background = 'rgba(26, 26, 26, 0.98)';
+            navbar.style.backdropFilter = 'blur(20px)';
+            navbar.style.boxShadow = '0 8px 32px rgba(0,0,0,0.3)';
         } else {
-            navbar.style.background = 'var(--primary-color)';
-            navbar.style.backdropFilter = 'none';
+            navbar.style.background = 'rgba(26, 26, 26, 0.95)';
+            navbar.style.backdropFilter = 'blur(20px)';
+            navbar.style.boxShadow = 'none';
         }
+    });
+    
+    // Intersection Observer for animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+    
+    // Observe elements for animation
+    document.querySelectorAll('.project-card, .cert-card, .timeline-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
     });
     
     // Dynamic counter animation for stats
@@ -158,23 +148,47 @@ document.addEventListener('DOMContentLoaded', function() {
         function updateCounter() {
             start += increment;
             if (start < target) {
-                if (target > 1) {
-                    element.textContent = Math.floor(start);
-                } else {
-                    element.textContent = start.toFixed(1);
-                }
+                element.textContent = Math.floor(start);
                 requestAnimationFrame(updateCounter);
             } else {
-                if (element.textContent.includes('$')) {
-                    element.textContent = `$${target}K`;
-                } else if (element.textContent.includes('%')) {
-                    element.textContent = `${target}%+`;
-                } else {
-                    element.textContent = target;
-                }
+                element.textContent = target + '+';
             }
         }
         updateCounter();
     }
+    
+    // Trigger counter animations when hero section is visible
+    const heroStats = document.querySelectorAll('.stat-number');
+    const heroObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                heroStats.forEach((stat, index) => {
+                    const text = stat.textContent;
+                    if (text.includes('7+')) {
+                        setTimeout(() => animateCounter(stat, 7), index * 200);
+                    } else if (text.includes('98%+')) {
+                        setTimeout(() => animateCounter(stat, 98), index * 200);
+                    } else if (text.includes('15+')) {
+                        setTimeout(() => animateCounter(stat, 15), index * 200);
+                    }
+                });
+                heroObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+        heroObserver.observe(heroSection);
+    }
+    
+    // Add click tracking for portfolio analytics
+    document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
+        button.addEventListener('click', function() {
+            const action = this.textContent.trim();
+            const section = this.closest('section')?.id || 'unknown';
+            console.log(`Portfolio Analytics: ${action} clicked in ${section} section`);
+        });
+    });
     
 });
