@@ -403,10 +403,8 @@ section h2 {
 
 .project-metrics {
     display: flex;
-    justify-content: center; /* Centers items horizontally */
-    align-items: baseline; /* Aligns items by their text baseline */
-    gap: 2rem;
-    margin-top: 1.5rem;
+    gap: 2.5rem;
+    margin-top: 2rem;
     flex-wrap: wrap;
 }
 
