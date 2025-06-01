@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Updated certifications data based on actual LinkedIn profile
+    document.addEventListener('DOMContentLoaded', function() {
+    
+    // Certifications data
     const certifications = [
         {
             name: "Google AI Essentials",
@@ -91,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
     
+    // Populate certifications grid
     const certGrid = document.getElementById('certifications-grid');
     if (certGrid) {
         certGrid.innerHTML = certifications.map(cert => `
@@ -102,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `).join('');
     }
-    
+        
     // Enhanced navbar scroll effect
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
