@@ -31,6 +31,11 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
     overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 0;
+}
+
 }
 
 .container {
