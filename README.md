@@ -1,84 +1,100 @@
-# Andy Chiang - Supply Chain Analytics Portfolio
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=3000&pause=1000&color=2E8B57&center=true&vCenter=true&width=900&lines=Supply+Chain+%26+Logistics+Professional;AI-Driven+Process+Optimization;Sustainability+Advocate;Former+Automated+Logistics+Specialist" alt="Typing SVG" />
+</div>
 
-**Logistics & Supply Chain Specialist | Innovating Sustainability and Efficiency**
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px">
+  Supply Chain & Logistics Professional
+</h1>
 
-Professional portfolio showcasing AI-driven process optimization, supply chain analytics, and operational excellence in military and civilian environments.
+<h3 align="center">🚀 AI-Driven Process Optimization | 🌱 Sustainability Advocate | 🎖️ Former Military Logistics Specialist</h3>
 
-## Professional Summary
+<div align="center">
+  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ch8a)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@example.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://github.com/your-username)
 
-Former U.S. Army Automated Logistics Specialist (2006-2013) with 7+ years of mission-critical operations experience, now specializing in AI-driven supply chain optimization and sustainability. Currently applying cutting-edge analytics as an AI Marketing Intern at HubSpot while building expertise in data-driven logistics transformation.
+![Profile Views](https://komarev.com/ghpvc/?username=your-username&color=2E8B57&style=for-the-badge&label=PROFILE+VIEWS)
 
-## Core Expertise & Experience
-
-### Military & Operations Background
-- **7+ Years U.S. Army Service** - 92A Automated Logistics Specialist
-- **4+ Years International Experience** - Manufacturing Operations in Taiwan
-- **Mission-Critical Operations** - 99.8%+ accuracy in high-pressure environments
-
-### Current Technology Focus
-- **AI Marketing Intern at HubSpot** (2025-Present)
-- **Google AI Essentials Certified** - Practical AI application
-- **Supply Chain Analytics** - KPIs, metrics, and optimization
-- **Data-Driven Decision Making** - Real-world client campaigns
-
-## Technical Stack & Certifications
-
-### AI & Analytics
-- **Google AI Essentials** (Coursera, 2024)
-- **HubSpot Reporting** (HubSpot Academy, 2024)
-- **Six Sigma Black Belt: Analytical Tools** (Skillsoft, 2024)
-
-### Supply Chain Management
-- **CSCMP Supply Chain Foundations: Demand Planning** (CSCMP, 2024)
-- **Supply Chain Management KPIs: Metric Inventory Performance** (Udemy, 2024)
-- **Supply Chain Management Basics: Cutting Costs and Optimizing Delivery** (Skillsoft, 2024)
-
-### Project Management
-- **Fundamentals of Agile Project Management** (PMI, 2024)
-- **Fundamentals of Predictive Project Management** (PMI, 2024)
-- **Generative AI Overview for Project Managers** (PMI, 2024)
-
-### Leadership & Strategy
-- **WGU Certificate: Strategic Thinking and Innovation** (WGU, 2024)
-
-## Academic Excellence
-
-**Western Governors University - Bachelor of Science, Business Administration (Management)**
-
-**Excellence Awards:**
-- **November 2024:** Logistics Management System Adaptation - praised for logical organization and innovative solutions
-- **October 2024:** Advanced understanding of emotional and cultural intelligence
-
-## Featured Projects
-
-### 1. HubSpot AI Campaign Optimization (2025)
-Real-world application of AI-driven tools for client campaigns, achieving 95%+ accuracy and 30% time reduction in manual processing.
-
-### 2. Supply Chain KPI Analytics Dashboard
-Interactive analytics tracking 2024 industry benchmarks including 8.5 inventory turnover targets and $2.270/mile transportation costs.
-
-### 3. Manufacturing Operations Excellence (Taiwan, 2017-2022)
-Led international manufacturing operations achieving 15% efficiency improvements through analytical process optimization.
-
-### 4. Military Logistics Systems Excellence (2006-2013)
-Operated mission-critical automated logistics systems maintaining 99.8%+ accuracy in high-pressure military environments.
-
-## Connect
-
-- **LinkedIn:** [https://www.linkedin.com/in/a8c/](https://www.linkedin.com/in/a8c/)
-- **GitHub:** [@D8taDabbler](https://github.com/D8taDabbler)
-- **Portfolio:** [Live Site](https://d8tadabbler.github.io/supply-chain-analytics)
-- **Location:** New York City Metropolitan Area
-
-## Current Focus
-
-Open to technology, manufacturing, or sustainable logistics roles where operational expertise meets innovation. Particularly interested in:
-
-- AI-driven supply chain transformation
-- Sustainable operations and ESG compliance
-- Data analytics and process optimization
-- Cross-functional collaboration in tech-forward environments
+</div>
 
 ---
 
-**Professional Philosophy:** Grounding technical skills in real-world problem-solving while balancing efficiency, sustainability, and ethical implementation.
+## 🎯 Professional Summary
+
+> *As a former **Automated Logistics Specialist** with extensive experience managing mission-critical military and civilian supply systems, I bring proven expertise in transforming complex supply chain challenges into streamlined operational excellence.*
+
+### 🔧 Core Competencies
+
+- **Operational Excellence**: Hands-on experience in customs compliance, warehouse management, and coordinating complex shipments for global clients across diverse industries
+- **Technical Innovation**: Google-certified in AI Essentials, Data Analytics, and Business Intelligence, with practical application in live client environments  
+- **Sustainability Leadership**: Committed to reducing operational waste through optimization, strategic sourcing, and AI-driven analytical solutions
+- **Strategic Analysis**: Leveraging HubSpot Marketing Hub expertise to transform theoretical knowledge into practical execution
+
+**Current Focus**: Exploring senior logistics roles in technology-forward manufacturing, sustainable operations, or supply chain innovation where analytical expertise accelerates digital transformation.
+
+## 🏆 What I Bring to Organizations
+
+<div align="center">
+
+| 🔧 **Operational Excellence** | 🧠 **Technical Innovation** | 🌿 **Sustainability Leadership** | 📊 **Strategic Analysis** |
+|:---:|:---:|:---:|:---:|
+| Customs Compliance<br/>Warehouse Management<br/>Global Coordination | AI Essentials<br/>Data Analytics<br/>Business Intelligence | Waste Reduction<br/>Process Optimization<br/>Strategic Sourcing | HubSpot Marketing Hub<br/>Practical Execution<br/>Live Client Application |
+
+</div>
+
+## 🎓 Education & Academic Excellence
+
+<div align="center">
+
+### 🏛️ Western Governors University
+**Bachelor of Science, Business Administration - Management**
+
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; margin: 20px 0;">
+
+| 🏆 **Excellence Award** | 📅 **November 2024** |
+|:---:|:---:|
+| **Outstanding Achievement** | Logistics Management System (LMS) |
+| *Exemplary adaptation with innovative solutions* | *Clear problem resolution & implementation* |
+
+| 🏆 **Excellence Award** | 📅 **October 2024** |
+|:---:|:---:|
+| **Advanced Understanding** | Emotional & Cultural Intelligence |
+| *Insightful analysis of key concepts* | *Leadership & Communication Excellence* |
+
+</div>
+
+**Activities and Societies**: Recipient of Excellence Awards for outstanding academic achievements
+
+</div>
+
+## 🛠️ Professional Certifications & Technical Skills
+
+<div align="center">
+
+### 📊 Business Intelligence & Analytics
+![HubSpot Marketing Hub](https://img.shields.io/badge/HubSpot-Marketing%20Hub%20Software-FF7A59?style=for-the-badge&logo=hubspot&logoColor=white)
+![Google Business Intelligence](https://img.shields.io/badge/Google-Business%20Intelligence-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Google Data Analytics](https://img.shields.io/badge/Google-Data%20Analytics-34A853?style=for-the-badge&logo=google&logoColor=white)
+
+### 🤖 AI & Process Optimization
+![Google AI Essentials](https://img.shields.io/badge/Google-AI%20Essentials-EA4335?style=for-the-badge&logo=google&logoColor=white)
+![Strategic Thinking](https://img.shields.io/badge/WGU-Strategic%20Thinking%20Principles-2E8B57?style=for-the-badge&logo=university&logoColor=white)
+![Lean Six Sigma](https://img.shields.io/badge/Lean-Six%20Sigma%20Principles-FF6B6B?style=for-the-badge&logo=target&logoColor=white)
+
+### 🔒 Cybersecurity & Compliance
+![Google Cybersecurity](https://img.shields.io/badge/Google-Cybersecurity-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Supply Chain Management](https://img.shields.io/badge/Supply%20Chain-Management%20KPIs-95A5A6?style=for-the-badge&logo=truck&logoColor=white)
+
+### 🏭 Project Management & Leadership
+![Agile Project Management](https://img.shields.io/badge/Agile-Project%20Management-9B59B6?style=for-the-badge&logo=agile&logoColor=white)
+![Team Leadership](https://img.shields.io/badge/Strategic-Team%20Leadership-E74C3C?style=for-the-badge&logo=users&logoColor=white)
+![Portfolio Project Management](https://img.shields.io/badge/Portfolio-Project%20Management-3498DB?style=for-the-badge&logo=project-diagram&logoColor=white)
+
+</div>
+
+## 🎯 Ready to Connect With
+
+<div align="center">
+
