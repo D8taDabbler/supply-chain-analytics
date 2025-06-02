@@ -1,541 +1,769 @@
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Your Name</h1>
-                <h2>AI Marketing Specialist & Supply Chain Professional</h2>
-                <p>Driving innovation at the intersection of artificial intelligence and logistics</p>
-                <div class="hero-buttons">
-                    <a href="#experience" class="btn btn-primary">View Experience</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Marketing Specialist & Supply Chain Professional | HubSpot Experience</title>
+    <meta name="description" content="AI Marketing Intern at HubSpot with extensive supply chain and logistics expertise. Specialized in data-driven marketing campaigns and process optimization.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h3><i class="fas fa-rocket"></i> Portfolio Pro</h3>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" onclick="showAdminPanel()" class="nav-link admin-link">
+                    <i class="fas fa-cog"></i>
+                </a></li>
+            </ul>
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="name" id="profileName">Your Name</span>
+                        <span class="subtitle">AI Marketing Specialist & Supply Chain Professional</span>
+                    </h1>
+                    <p class="hero-description">
+                        Currently AI Marketing Intern at HubSpot, bringing data-driven marketing expertise 
+                        and extensive supply chain management experience to drive measurable business impact.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Months at HubSpot</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Total Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Major Certifications</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn--primary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="#experience" class="btn btn--outline">
+                            <i class="fas fa-briefcase"></i> View Experience
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/300x300/5BC0BE/0A1128?text=Professional+Photo" alt="Professional Profile" id="profileImg">
+                            <div class="profile-overlay">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <p class="current-role">AI Marketing Intern @ HubSpot</p>
+                            <p class="location" id="profileLocation">Your Location</p>
+                        </div>
+                        <div class="enhanced-social-links">
+                            <a href="#" id="linkedinLink" class="social-link linkedin" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" id="githubLink" class="social-link github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="mailto:" id="emailLink" class="social-link email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="tel:" id="phoneLink" class="social-link phone">
+                                <i class="fas fa-phone"></i>
+                                <span>Call</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="images/profile-image.png" alt="Professional Headshot">
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- About Section -->
-<section id="about" class="about">
-    <div class="container">
-        <div class="section-header">
-            <h2>About Me</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I am an AI Marketing Specialist with extensive background in supply chain and logistics operations. My unique combination of technical logistics expertise and cutting-edge AI-driven marketing skills allows me to bring data-driven insights and operational excellence to every project.</p>
-                <p>Currently working as an AI Marketing Intern at HubSpot, I leverage artificial intelligence tools to design and execute multi-channel marketing campaigns, segment audiences, and deliver measurable business impact for clients.</p>
-                <p>My journey includes international experience in Taiwan's manufacturing sector, logistics coordination in New York, and seven years of military logistics service with the US Army. This diverse background has equipped me with exceptional adaptability, problem-solving abilities, and technical expertise in both traditional logistics systems and modern AI marketing platforms.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="experience">
-    <div class="container">
-        <div class="section-header">
-            <h2>Professional Experience</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="timeline">
-            <!-- HubSpot Experience -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>AI Marketing Intern</h3>
-                        <div class="company">
-                            <img src="images/hubspot-logo.png" alt="HubSpot" class="company-logo">
-                            <span>HubSpot</span>
-                        </div>
-                        <p class="timeline-period">Apr 2025 - Present (3 mos)</p>
-                        <p class="timeline-location">Remote</p>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-user-circle"></i>
+                Professional Summary
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Dynamic AI Marketing professional currently contributing to HubSpot's innovative marketing 
+                        campaigns while leveraging 15+ years of supply chain and logistics expertise to drive 
+                        data-driven business solutions.
+                    </p>
+                    <p>
+                        My unique combination of AI marketing skills and operational excellence allows me to bridge 
+                        the gap between traditional business processes and cutting-edge digital marketing strategies. 
+                        At HubSpot, I design multi-channel campaigns using AI features while applying analytics 
+                        for audience segmentation and performance measurement.
+                    </p>
+                    <div class="transition-story">
+                        <h3><i class="fas fa-route"></i> Career Transition Journey</h3>
+                        <p>
+                            After 15+ years in supply chain and logistics, I took a purposeful career break to 
+                            provide family care while completing my Bachelor's degree in Business Administration. 
+                            This period of growth led to my current role at HubSpot, where I combine analytical 
+                            skills from logistics with innovative AI marketing strategies.
+                        </p>
                     </div>
-                    <div class="timeline-body">
-                        <ul class="achievement-list">
-                            <li>Design and execute multi-channel marketing campaigns tailored to client goals, leveraging HubSpot's AI features</li>
-                            <li>Collaborate with project teams to implement and optimize data-driven marketing initiatives from concept to completion</li>
-                            <li>Apply AI and analytics tools for audience segmentation, content personalization, and campaign performance measurement</li>
-                            <li>Engage directly with clients to clarify objectives, deliver actionable insights, and recommend strategic solutions</li>
-                            <li>Present findings and strategies to clients, mentors, and program stakeholders, demonstrating measurable business impact</li>
+                    <div class="expertise-areas">
+                        <div class="expertise-item">
+                            <i class="fas fa-robot"></i>
+                            <h4>AI Marketing</h4>
+                            <p>HubSpot AI features, campaign automation, data-driven marketing strategies</p>
+                        </div>
+                        <div class="expertise-item">
+                            <i class="fas fa-chart-analytics"></i>
+                            <h4>Analytics & Optimization</h4>
+                            <p>Performance measurement, audience segmentation, process improvement</p>
+                        </div>
+                        <div class="expertise-item">
+                            <i class="fas fa-globe"></i>
+                            <h4>Global Operations</h4>
+                            <p>International logistics, supply chain management, cross-cultural communication</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-briefcase"></i>
+                Professional Experience Timeline
+            </h2>
+            <div class="timeline">
+                <!-- Current Role -->
+                <div class="timeline-item current">
+                    <div class="timeline-marker">
+                        <i class="fab fa-hubspot"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Apr 2025 - Present</div>
+                        <h3>AI Marketing Intern</h3>
+                        <h4>HubSpot</h4>
+                        <span class="location">Remote</span>
+                        <p class="role-description">
+                            Contributing to dynamic, hands-on internship focused on developing and executing 
+                            AI-driven marketing strategies for real-world clients using HubSpot's digital tools.
+                        </p>
+                        <ul class="achievements">
+                            <li>Designed and executed multi-channel marketing campaigns tailored to client goals, leveraging HubSpot's AI features</li>
+                            <li>Collaborated with project teams to implement and optimize data-driven marketing initiatives from concept to completion</li>
+                            <li>Applied AI and analytics tools for audience segmentation, content personalization, and campaign performance measurement</li>
+                            <li>Engaged directly with clients to clarify objectives, deliver actionable insights, and recommend strategic solutions</li>
+                            <li>Presented findings and strategies to clients, mentors, and program stakeholders, demonstrating measurable business impact</li>
+                            <li>Enhanced technical marketing expertise in AI applications, analytics, and client relationship management</li>
                         </ul>
                         <div class="skills-tags">
-                            <span class="skill-tag">Digital Marketing</span>
-                            <span class="skill-tag">AI Marketing</span>
-                            <span class="skill-tag">Marketing Analytics</span>
-                            <span class="skill-tag">Campaign Management</span>
-                            <span class="skill-tag">Client Relations</span>
+                            <span class="tag primary">Digital Marketing</span>
+                            <span class="tag primary">AI Marketing</span>
+                            <span class="tag primary">Marketing Analytics</span>
+                            <span class="tag primary">Campaign Management</span>
+                            <span class="tag primary">HubSpot</span>
+                            <span class="tag">Content Marketing</span>
+                            <span class="tag">Customer Segmentation</span>
+                            <span class="tag">Marketing Automation</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Career Break -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Career Break</h3>
-                        <p class="timeline-period">May 2020 - Apr 2025 (5 yrs)</p>
+                <!-- Career Break -->
+                <div class="timeline-item career-break">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <div class="timeline-body">
-                        <ul class="achievement-list">
-                            <li>Took a purposeful career break to provide primary care for a family member while pursuing a Bachelor's degree in Business Administration – Management</li>
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2020 - Apr 2025</div>
+                        <h3>Career Break & Professional Development</h3>
+                        <h4>Personal & Academic Focus</h4>
+                        <span class="location">United States</span>
+                        <p class="role-description">
+                            Took a purposeful career break to provide primary care for a family member while 
+                            pursuing a Bachelor's degree in Business Administration – Management.
+                        </p>
+                        <ul class="achievements">
                             <li>Managed complex medical appointments and healthcare communications, demonstrating exceptional adaptability and resilience</li>
                             <li>Applied project management principles to balance intensive caregiving responsibilities with full-time academic study</li>
                             <li>Developed advanced empathy and advocacy skills through daily support and coordination with healthcare professionals</li>
                             <li>Maintained commitment to continuous learning and personal achievement despite significant personal challenges</li>
+                            <li>Completed Bachelor's degree in Business Administration with focus on management and analytics</li>
                         </ul>
                         <div class="skills-tags">
-                            <span class="skill-tag">Project Management</span>
-                            <span class="skill-tag">Healthcare Communication</span>
-                            <span class="skill-tag">Academic Excellence</span>
-                            <span class="skill-tag">Adaptability</span>
+                            <span class="tag">Project Management</span>
+                            <span class="tag">Healthcare Communication</span>
+                            <span class="tag">Academic Excellence</span>
+                            <span class="tag">Adaptability</span>
+                            <span class="tag">Resilience</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Yong Qi Solutions -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Manufacturing Operations Specialist</h3>
-                        <div class="company">
-                            <span>Yong Qi Solutions</span>
-                        </div>
-                        <p class="timeline-period">Nov 2017 - Jun 2022 (4 yrs 8 mos)</p>
-                        <p class="timeline-location">Taipei City, Taiwan</p>
+                <!-- Manufacturing Operations -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-industry"></i>
                     </div>
-                    <div class="timeline-body">
-                        <ul class="achievement-list">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2017 - Jun 2022</div>
+                        <h3>Manufacturing Operations Specialist</h3>
+                        <h4>Yong Qi Solutions</h4>
+                        <span class="location">Taipei City, Taiwan</span>
+                        <p class="role-description">
+                            Supported manufacturing and assembly operations, supply chain coordination, and 
+                            onsite installations for industrial clients, including major players in the tech and semiconductor sectors.
+                        </p>
+                        <ul class="achievements">
                             <li>Operated CNC machinery and led assembly tasks for complex industrial equipment, ensuring adherence to quality and safety standards</li>
                             <li>Coordinated material procurement and tracked inbound/outbound shipments while maintaining production schedules to meet critical project deadlines</li>
                             <li>Built strategic supplier partnerships and resolved logistical challenges to support successful equipment installations at client facilities</li>
                             <li>Contributed to process improvement initiatives, providing operational insights and feedback to streamline manufacturing workflows</li>
                         </ul>
                         <div class="skills-tags">
-                            <span class="skill-tag">Supply Chain Management</span>
-                            <span class="skill-tag">Vendor Relations</span>
-                            <span class="skill-tag">Project Management</span>
-                            <span class="skill-tag">Operations Management</span>
+                            <span class="tag">Supply Chain Management</span>
+                            <span class="tag">Vendor Relations</span>
+                            <span class="tag">CNC Machinery</span>
+                            <span class="tag">Operations Management</span>
+                            <span class="tag">Process Improvement</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Nippon Express -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Operations Coordinator</h3>
-                        <div class="company">
-                            <span>Nippon Express | AGS Group</span>
-                        </div>
-                        <p class="timeline-period">Jan 2017 - Nov 2017 (11 mos)</p>
-                        <p class="timeline-location">New York City Metropolitan Area</p>
+                <!-- Nippon Express Operations -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-shipping-fast"></i>
                     </div>
-                    <div class="timeline-body">
-                        <ul class="achievement-list">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2017 - Nov 2017</div>
+                        <h3>Operations Coordinator</h3>
+                        <h4>Nippon Express | AGS Group | Logistics Management Division</h4>
+                        <span class="location">New York City Metropolitan Area</span>
+                        <p class="role-description">
+                            Led daily freight forwarding, tradeshow logistics, and specialized deliveries to 
+                            corporate and residential clients in fast-paced operational environments.
+                        </p>
+                        <ul class="achievements">
                             <li>Orchestrated end-to-end logistics for major tradeshows and exhibitions, managing complex shipping and event coordination</li>
                             <li>Coordinated white-glove and high-value shipments, working closely with vendors, customers, and distributors to ensure seamless delivery</li>
                             <li>Managed documentation and customs procedures, ensuring compliant cross-border movement of goods and materials</li>
                             <li>Identified and implemented process efficiency improvements to enhance customer experience and operational performance</li>
                         </ul>
                         <div class="skills-tags">
-                            <span class="skill-tag">Logistics Management</span>
-                            <span class="skill-tag">Freight Forwarding</span>
-                            <span class="skill-tag">International Shipping</span>
-                            <span class="skill-tag">Event Management</span>
+                            <span class="tag">Logistics Management</span>
+                            <span class="tag">Freight Forwarding</span>
+                            <span class="tag">International Shipping</span>
+                            <span class="tag">Event Management</span>
+                            <span class="tag">Documentation</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Call Center Representative -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Call Center Representative</h3>
-                        <div class="company">
-                            <span>Nippon Express | AGS Group</span>
-                        </div>
-                        <p class="timeline-period">Oct 2016 - Jan 2017 (4 mos)</p>
-                        <p class="timeline-location">New Hyde Park, New York</p>
+                <!-- Call Center Role -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-headset"></i>
                     </div>
-                    <div class="timeline-body">
-                        <ul class="achievement-list">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2016 - Jan 2017</div>
+                        <h3>Call Center Representative</h3>
+                        <h4>Nippon Express | AGS Group</h4>
+                        <span class="location">New Hyde Park, New York</span>
+                        <p class="role-description">
+                            Provided comprehensive customer service and logistics support for clients with 
+                            diverse shipping and supply chain requirements.
+                        </p>
+                        <ul class="achievements">
                             <li>Delivered prompt, expert assistance for shipment tracking, issue resolution, and customer inquiries across multiple freight solutions</li>
                             <li>Advised clients on optimal shipping methods (air, sea, land, express courier) to align with time, budget, and logistics constraints</li>
                             <li>Facilitated customs clearance and documentation processes for international shipments, ensuring regulatory compliance</li>
                             <li>Maintained high service standards through professional communication and comprehensive logistics knowledge</li>
                         </ul>
                         <div class="skills-tags">
-                            <span class="skill-tag">Customer Service</span>
-                            <span class="skill-tag">Integrated Logistics Support</span>
-                            <span class="skill-tag">Problem Solving</span>
-                            <span class="skill-tag">Documentation</span>
+                            <span class="tag">Customer Service</span>
+                            <span class="tag">Problem Solving</span>
+                            <span class="tag">Communication</span>
+                            <span class="tag">Documentation</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Commercial Logistics Coordinator -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Commercial Logistics Coordinator</h3>
-                        <div class="company">
-                            <span>Liberty Global Logistics LLC</span>
-                        </div>
-                        <p class="timeline-period">Sep 2014 - Oct 2016 (2 yrs 2 mos)</p>
-                        <p class="timeline-location">Lake Success, New York</p>
+                <!-- Liberty Global -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-anchor"></i>
                     </div>
-                    <div class="timeline-body">
-                        <ul class="achievement-list">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2014 - Oct 2016</div>
+                        <h3>Commercial Logistics Coordinator & Administrative Specialist</h3>
+                        <h4>Liberty Global Logistics LLC</h4>
+                        <span class="location">Lake Success, New York</span>
+                        <p class="role-description">
+                            Managed international ocean freight operations and client relationships for 
+                            diverse cargo types across global trade lanes, with additional administrative responsibilities.
+                        </p>
+                        <ul class="achievements">
                             <li>Coordinated booking, documentation, and compliance for sea freight exports and imports, ensuring regulatory adherence</li>
                             <li>Served as primary liaison between vendors, carriers, and internal teams to troubleshoot and resolve complex logistical challenges</li>
                             <li>Implemented workflow improvements and maintained accurate record-keeping systems to enhance operational efficiency</li>
                             <li>Managed diverse client portfolio requiring customized shipping solutions and specialized cargo handling</li>
-                        </ul>
-                        <div class="skills-tags">
-                            <span class="skill-tag">Multi-modal Transportation</span>
-                            <span class="skill-tag">Scheduling Management</span>
-                            <span class="skill-tag">Trade Compliance</span>
-                            <span class="skill-tag">International Logistics</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Administrative Specialist -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Administrative Specialist</h3>
-                        <div class="company">
-                            <span>Liberty Global Logistics LLC</span>
-                        </div>
-                        <p class="timeline-period">Jul 2014 - Sep 2014 (3 mos)</p>
-                        <p class="timeline-location">Lake Success, New York</p>
-                    </div>
-                    <div class="timeline-body">
-                        <ul class="achievement-list">
                             <li>Organized and maintained critical documentation for multiple logistics projects, ensuring accuracy and timely processing</li>
-                            <li>Streamlined data entry and document management processes, contributing to smoother project execution and team efficiency</li>
-                            <li>Supported process optimization initiatives to enhance office workflow and logistics documentation accuracy</li>
-                            <li>Maintained operational continuity during transitional period through reliable administrative support</li>
                         </ul>
                         <div class="skills-tags">
-                            <span class="skill-tag">Data Entry</span>
-                            <span class="skill-tag">Document Management</span>
-                            <span class="skill-tag">Administrative Assistance</span>
-                            <span class="skill-tag">Process Improvement</span>
+                            <span class="tag">Multi-modal Transportation</span>
+                            <span class="tag">Trade Compliance</span>
+                            <span class="tag">International Logistics</span>
+                            <span class="tag">Document Management</span>
+                            <span class="tag">Process Improvement</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Army Logistics Specialist -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>92A - Automated Logistics Specialist</h3>
-                        <div class="company">
-                            <span>United States Department of the Army</span>
-                        </div>
-                        <p class="timeline-period">Aug 2006 - Aug 2013 (7 yrs 1 mo)</p>
-                        <p class="timeline-location">United States</p>
+                <!-- Military Service -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-star"></i>
                     </div>
-                    <div class="timeline-body">
-                        <ul class="achievement-list">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2006 - Aug 2013</div>
+                        <h3>92A - Automated Logistics Specialist</h3>
+                        <h4>United States Department of the Army</h4>
+                        <span class="location">United States</span>
+                        <p class="role-description">
+                            Managed comprehensive supply chain, inventory, and logistics operations in support 
+                            of critical military missions and readiness requirements.
+                        </p>
+                        <ul class="achievements">
                             <li>Operated military inventory management systems to maintain supply accuracy and ensure operational readiness</li>
                             <li>Coordinated requisitions, storage, and distribution of essential materials and equipment across multiple supply categories</li>
                             <li>Conducted regular audits and implemented process improvements to enhance logistics accuracy and operational efficiency</li>
                             <li>Provided training and mentorship to junior logistics specialists on system operations, procedures, and best practices</li>
                         </ul>
                         <div class="skills-tags">
-                            <span class="skill-tag">Supply Chain Operations</span>
-                            <span class="skill-tag">Inventory Management</span>
-                            <span class="skill-tag">Military Training</span>
-                            <span class="skill-tag">Logistics Systems</span>
+                            <span class="tag">Supply Chain Operations</span>
+                            <span class="tag">Inventory Management</span>
+                            <span class="tag">Military Training</span>
+                            <span class="tag">Systems Operations</span>
+                            <span class="tag">Leadership</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Skills Section -->
-<section id="skills" class="skills">
-    <div class="container">
-        <div class="section-header">
-            <h2>Skills & Expertise</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="skills-container">
-            <div class="skills-column">
-                <h3>Technical Skills</h3>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>AI Marketing Tools</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>HubSpot Platform</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Marketing Analytics</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Supply Chain Management</span>
-                        <span>95%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-chart-bar"></i>
+                Skills & Expertise
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category ai-marketing">
+                    <h3><i class="fas fa-robot"></i> AI Marketing & Digital</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AI Marketing Tools</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HubSpot Platform</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Marketing Analytics</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Campaign Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                            <span class="skill-level">85%</span>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>TMS/WMS Systems</span>
-                        <span>90%</span>
+
+                <div class="skill-category technical">
+                    <h3><i class="fas fa-cogs"></i> Technical & Analytics</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Data Analysis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Supply Chain Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TMS/WMS Systems</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CNC Machinery</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                            <span class="skill-level">85%</span>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
+                </div>
+
+                <div class="skill-category soft-skills">
+                    <h3><i class="fas fa-users"></i> Leadership & Communication</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Project Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Client Relations</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Cross-cultural Communication</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Team Leadership</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                            <span class="skill-level">85%</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="skills-column">
-                <h3>Soft Skills</h3>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Project Management</span>
-                        <span>95%</span>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-graduation-cap"></i>
+                Education & Certifications
+            </h2>
+            <div class="education-content">
+                <div class="education-item featured">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Client Relations</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Cross-cultural Communication</span>
-                        <span>95%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
+                    <div class="education-details">
+                        <h3>Bachelor of Science in Business Administration - Management</h3>
+                        <h4>Western Governors University</h4>
+                        <span class="period">2020-2025</span>
+                        <p class="honors">Excellence Awards</p>
+                        <p>Completed during career break while providing family care, demonstrating exceptional time management and dedication to continuous learning.</p>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Process Optimization</span>
-                        <span>90%</span>
+
+                <div class="certifications-grid">
+                    <div class="cert-item current">
+                        <div class="cert-icon">
+                            <i class="fab fa-hubspot"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>HubSpot Marketing Hub Certification</h4>
+                            <p>Marketing automation, analytics, and AI-driven campaign management</p>
+                            <span class="cert-status current">Current</span>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
+
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>Google Business Intelligence Certificate</h4>
+                            <p>Data analytics, visualization, and business intelligence tools</p>
+                            <span class="cert-status">Certified</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>Google Cybersecurity Certificate</h4>
+                            <p>Information security, risk management, and compliance</p>
+                            <span class="cert-status">Certified</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>Supply Chain Management Certification</h4>
+                            <p>Professional certification in supply chain operations and optimization</p>
+                            <span class="cert-status">Certified</span>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Team Leadership</span>
-                        <span>85%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-envelope"></i>
+                Let's Connect
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to Collaborate?</h3>
+                    <p>
+                        Whether you're interested in AI-driven marketing strategies, supply chain optimization, 
+                        or discussing career opportunities, I'd love to connect and explore how we can work together.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:" id="contactEmail">your.email@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:" id="contactPhone">+1 (555) 123-4567</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <span id="contactLocation">Your City, State</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
+
+                    <div class="enhanced-social-section">
+                        <h4>Connect on Social Media</h4>
+                        <div class="social-grid">
+                            <a href="#" class="enhanced-social-link linkedin" target="_blank" id="contactLinkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                            <a href="#" class="enhanced-social-link github" target="_blank" id="contactGithub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub Projects</span>
+                            </a>
+                        </div>
                     </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="">Select a topic...</option>
+                                <option value="collaboration">AI Marketing Collaboration</option>
+                                <option value="consulting">Supply Chain Consulting</option>
+                                <option value="opportunity">Career Opportunity</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required placeholder="Tell me about your project or opportunity..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Professional Portfolio. Built with modern web technologies for optimal performance.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel" class="admin-panel hidden">
+        <div class="admin-content">
+            <div class="admin-header">
+                <h3><i class="fas fa-cog"></i> Portfolio Admin Panel</h3>
+                <button onclick="hideAdminPanel()" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div id="adminLogin" class="admin-section">
+                <div class="form-group">
+                    <label class="form-label">Admin Password</label>
+                    <input type="password" id="adminPassword" class="form-control" placeholder="Enter admin password">
+                    <button onclick="verifyAdmin()" class="btn btn--primary">Access Dashboard</button>
+                </div>
+            </div>
+
+            <div id="adminDashboard" class="admin-section hidden">
+                <div class="admin-tabs">
+                    <button class="tab-btn active" onclick="showTab('profile')">Profile Info</button>
+                    <button class="tab-btn" onclick="showTab('social')">Social Links</button>
+                    <button class="tab-btn" onclick="showTab('contact')">Contact</button>
+                </div>
+
+                <div id="profileTab" class="tab-content active">
+                    <h4>Profile Information</h4>
+                    <div class="form-group">
+                        <label class="form-label">Profile Picture URL</label>
+                        <input type="url" id="adminProfilePicture" class="form-control" placeholder="https://example.com/your-photo.jpg">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" id="adminName" class="form-control" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Location</label>
+                        <input type="text" id="adminLocation" class="form-control" placeholder="Your City, State">
+                    </div>
+                </div>
+
+                <div id="socialTab" class="tab-content hidden">
+                    <h4>Social Media Links</h4>
+                    <div class="form-group">
+                        <label class="form-label">LinkedIn URL</label>
+                        <input type="url" id="adminLinkedin" class="form-control" placeholder="https://linkedin.com/in/yourprofile">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">GitHub URL</label>
+                        <input type="url" id="adminGithub" class="form-control" placeholder="https://github.com/yourusername">
+                    </div>
+                </div>
+
+                <div id="contactTab" class="tab-content hidden">
+                    <h4>Contact Information</h4>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" id="adminEmail" class="form-control" placeholder="your.email@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" id="adminPhone" class="form-control" placeholder="+1 (555) 123-4567">
+                    </div>
+                </div>
+
+                <div class="admin-actions">
+                    <button onclick="saveChanges()" class="btn btn--primary">Save Changes</button>
+                    <button onclick="previewChanges()" class="btn btn--outline">Preview</button>
                 </div>
             </div>
         </div>
     </div>
-</section>
 
-<!-- Education Section -->
-<section id="education" class="education">
-    <div class="container">
-        <div class="section-header">
-            <h2>Education & Certifications</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="education-container">
-            <div class="education-item">
-                <div class="education-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="education-content">
-                    <h3>Bachelor of Science in Business Administration - Management</h3>
-                    <p class="institution">Western Governors University</p>
-                    <p class="period">2020 - 2025</p>
-                    <p class="honors">Excellence Awards</p>
-                </div>
-            </div>
-            <div class="certifications">
-                <h3>Professional Certifications</h3>
-                <ul class="certification-list">
-                    <li><i class="fas fa-certificate"></i> HubSpot Marketing Hub Certification</li>
-                    <li><i class="fas fa-certificate"></i> Google Business Intelligence Certificate</li>
-                    <li><i class="fas fa-certificate"></i> Google Cybersecurity Certificate</li>
-                    <li><i class="fas fa-certificate"></i> Supply Chain Management Certification</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- Notification Container -->
+    <div id="notificationContainer"></div>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="container">
-        <div class="section-header">
-            <h2>Contact Me</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h3>Email</h3>
-                        <p><a href="mailto:your.email@gmail.com">your.email@gmail.com</a></p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h3>Phone</h3>
-                        <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h3>Location</h3>
-                        <p>Your City, State</p>
-                    </div>
-                </div>
-            </div>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/d8tadabbler" class="social-link" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:your.email@gmail.com" class="social-link">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Admin Panel -->
-<div id="admin-panel" class="admin-panel">
-    <div class="admin-container">
-        <div class="admin-header">
-            <h2>Admin Panel</h2>
-            <button id="close-admin" class="close-btn"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="admin-login" id="admin-login">
-            <h3>Login to Admin Panel</h3>
-            <input type="password" id="admin-password" placeholder="Enter Password">
-            <button id="login-btn" class="btn btn-primary">Login</button>
-            <p class="admin-message" id="login-message"></p>
-        </div>
-        <div class="admin-content" id="admin-content">
-            <div class="admin-section">
-                <h3>Personal Information</h3>
-                <div class="form-group">
-                    <label for="admin-name">Full Name</label>
-                    <input type="text" id="admin-name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                    <label for="admin-title">Professional Title</label>
-                    <input type="text" id="admin-title" placeholder="Your Professional Title">
-                </div>
-                <div class="form-group">
-                    <label for="admin-email">Email</label>
-                    <input type="email" id="admin-email" placeholder="your.email@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="admin-phone">Phone</label>
-                    <input type="text" id="admin-phone" placeholder="+1 (555) 123-4567">
-                </div>
-                <div class="form-group">
-                    <label for="admin-location">Location</label>
-                    <input type="text" id="admin-location" placeholder="Your City, State">
-                </div>
-            </div>
-            <div class="admin-section">
-                <h3>Social Links</h3>
-                <div class="form-group">
-                    <label for="admin-linkedin">LinkedIn URL</label>
-                    <input type="url" id="admin-linkedin" placeholder="https://linkedin.com/in/yourprofile">
-                </div>
-                <div class="form-group">
-                    <label for="admin-github">GitHub URL</label>
-                    <input type="url" id="admin-github" placeholder="https://github.com/d8tadabbler">
-                </div>
-            </div>
-            <div class="admin-section">
-                <h3>Profile Picture</h3>
-                <div class="form-group">
-                    <label for="admin-profile-pic">Upload New Profile Picture</label>
-                    <input type="file" id="admin-profile-pic" accept="image/*">
-                </div>
-            </div>
-            <button id="save-changes" class="btn btn-primary">Save Changes</button>
-            <p class="admin-message" id="save-message"></p>
-        </div>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-    </div>
-</footer>
-
-<script src="js/script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
