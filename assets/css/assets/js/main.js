@@ -17,7 +17,307 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Updated certifications data based on actual LinkedIn profile
+    // Generate Analytics Charts
+    function createInventoryChart() {
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const turnoverData = [7.2, 7.8, 8.1, 8.5, 8.9, 8.7, 8.3, 8.6, 8.8, 9.1, 8.9, 8.7];
+        const benchmarkData = Array(12).fill(8.5);
+        
+        const trace1 = {
+            x: months,
+            y: turnoverData,
+            type: 'scatter',
+            mode: 'lines+markers',
+            name: 'Actual Turnover',
+            line: {color: '#3498db', width: 3},
+            marker: {color: '#3498db', size: 8}
+        };
+        
+        const trace2 = {
+            x: months,
+            y: benchmarkData,
+            type: 'scatter',
+            mode: 'lines',
+            name: 'Industry Benchmark',
+            line: {color: '#e74c3c', width: 2, dash: 'dash'}
+        };
+        
+        const layout = {
+            title: {
+                text: 'Monthly Inventory Turnover vs Benchmark',
+                font: {color: '#ffffff', size: 16}
+            },
+            xaxis: {
+                title: 'Month',
+                color: '#b8c5d6',
+                gridcolor: '#30363d'
+            },
+            yaxis: {
+                title: 'Turnover Ratio',
+                color: '#b8c5d6',
+                gridcolor: '#30363d'
+            },
+            plot_bgcolor: '#21262d',
+            paper_bgcolor: '#21262d',
+            font: {color: '#b8c5d6'},
+            legend: {
+                font: {color: '#b8c5d6'},
+                bgcolor: 'rgba(33, 38, 45, 0.8)'
+            }
+        };
+        
+        Plotly.newPlot('inventory-chart', [trace1, trace2], layout, {responsive: true});
+    }
+    
+    function createTransportationChart() {
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const costData = [2.35, 2.28, 2.22, 2.18, 2.15, 2.12, 2.16, 2.19, 2.14, 2.11, 2.13, 2.18];
+        const benchmarkData = Array(12).fill(2.27);
+        
+        const trace1 = {
+            x: months,
+            y: costData,
+            type: 'bar',
+            name: 'Actual Cost/Mile',
+            marker: {color: '#27ae60'}
+        };
+        
+        const trace2 = {
+            x: months,
+            y: benchmarkData,
+            type: 'scatter',
+            mode: 'lines',
+            name: 'Industry Benchmark',
+            line: {color: '#e74c3c', width: 3}
+        };
+        
+        const layout = {
+            title: {
+                text: 'Transportation Cost per Mile Trend',
+                font: {color: '#ffffff', size: 16}
+            },
+            xaxis: {
+                title: 'Month',
+                color: '#b8c5d6',
+                gridcolor: '#30363d'
+            },
+            yaxis: {
+                title: 'Cost per Mile ($)',
+                color: '#b8c5d6',
+                gridcolor: '#30363d'
+            },
+            plot_bgcolor: '#21262d',
+            paper_bgcolor: '#21262d',
+            font: {color: '#b8c5d6'},
+            legend: {
+                font: {color: '#b8c5d6'},
+                bgcolor: 'rgba(33, 38, 45, 0.8)'
+            }
+        };
+        
+        Plotly.newPlot('transportation-chart', [trace1, trace2], layout, {responsive: true});
+    }
+    
+    function createSupplierChart() {
+        const suppliers = ['Global Mfg Co', 'Tech Solutions', 'BuildCorp', 'PharmaChem', 'AutoParts'];
+        const onTimeRate = [98.2, 96.8, 94.5, 99.1, 97.3];
+        const qualityScore = [4.8, 4.6, 4.2, 4.9, 4.5];
+        
+        const trace1 = {
+            x: onTimeRate,
+            y: qualityScore,
+            mode: 'markers+text',
+            type: 'scatter',
+            text: suppliers,
+            textposition: 'middle right',
+            marker: {
+                size: 15,
+                color: '#3498db',
+                line: {
+                    color: '#ffffff',
+                    width: 2
+                }
+            }
+        };
+        
+        const layout = {
+            title: {
+                text: 'Supplier Performance Matrix',
+                font: {color: '#ffffff', size: 16}
+            },
+            xaxis: {
+                title: 'On-Time Delivery Rate (%)',
+                color: '#b8c5d6',
+                gridcolor: '#30363d'
+            },
+            yaxis: {
+                title: 'Quality Score (1-5)',
+                color: '#b8c5d6',
+                gridcolor: '#30363d'
+            },
+            plot_bgcolor: '#21262d',
+            paper_bgcolor: '#21262d',
+            font: {color: '#b8c5d6'}
+        };
+        
+        Plotly.newPlot('supplier-chart', [trace1], layout, {responsive: true});
+    }
+    
+    function createForecastChart() {
+        const dates = [];
+        const actualDemand = [];
+        const forecastDemand = [];
+        
+        // Generate sample time series data
+        for (let i = 0; i < 365; i++) {
+            const date = new Date();
+            date.setDate(date.getDate() - 365 + i);
+            dates.push(date.toISOString().split('T')[0]);
+            
+            // Generate sample demand with seasonality
+            const seasonality = Math.sin((i / 365) * 2 * Math.PI) * 20;
+            const trend = i * 0.1;
+            const noise = (Math.random() - 0.5) * 10;
+            
+            if (i < 300) {
+                actualDemand.push(100 + seasonality + trend + noise);
+            } else {
+                forecastDemand.push(100 + seasonality + trend);
+            }
+        }
+        
+        const trace1 = {
+            x: dates.slice(0, 300),
+            y: actualDemand,
+            type: 'scatter',
+            mode: 'lines',
+            name: 'Actual Demand',
+            line: {color: '#3498db', width: 2}
+        };
+        
+        const trace2 = {
+            x: dates.slice(300),
+            y: forecastDemand,
+            type: 'scatter',
+            mode: 'lines',
+            name: 'Forecast',
+            line: {color: '#e74c3c', width: 2, dash: 'dash'}
+        };
+        
+        const layout = {
+            title: {
+                text: 'Demand Forecasting with Prophet Model',
+                font: {color: '#ffffff', size: 16}
+            },
+            xaxis: {
+                title: 'Date',
+                color: '#b8c5d6',
+                gridcolor: '#30363d'
+            },
+            yaxis: {
+                title: 'Demand Units',
+                color: '#b8c5d6',
+                gridcolor: '#30363d'
+            },
+            plot_bgcolor: '#21262d',
+            paper_bgcolor: '#21262d',
+            font: {color: '#b8c5d6'},
+            legend: {
+                font: {color: '#b8c5d6'},
+                bgcolor: 'rgba(33, 38, 45, 0.8)'
+            }
+        };
+        
+        Plotly.newPlot('forecast-chart', [trace1, trace2], layout, {responsive: true});
+    }
+    
+    function createManufacturingProcessChart() {
+        const processes = ['Raw Materials', 'Assembly', 'Quality Check', 'Packaging', 'Shipping'];
+        const beforeOptimization = [4.2, 3.8, 2.1, 1.9, 2.3];
+        const afterOptimization = [3.6, 3.2, 1.8, 1.6, 1.9];
+        
+        const trace1 = {
+            x: processes,
+            y: beforeOptimization,
+            type: 'bar',
+            name: 'Before Optimization',
+            marker: {color: '#e74c3c'}
+        };
+        
+        const trace2 = {
+            x: processes,
+            y: afterOptimization,
+            type: 'bar',
+            name: 'After Optimization',
+            marker: {color: '#27ae60'}
+        };
+        
+        const layout = {
+            title: {
+                text: 'Manufacturing Process Time Reduction (Hours)',
+                font: {color: '#ffffff', size: 16}
+            },
+            xaxis: {
+                title: 'Process Stage',
+                color: '#b8c5d6',
+                gridcolor: '#30363d'
+            },
+            yaxis: {
+                title: 'Time (Hours)',
+                color: '#b8c5d6',
+                gridcolor: '#30363d'
+            },
+            plot_bgcolor: '#21262d',
+            paper_bgcolor: '#21262d',
+            font: {color: '#b8c5d6'},
+            legend: {
+                font: {color: '#b8c5d6'},
+                bgcolor: 'rgba(33, 38, 45, 0.8)'
+            },
+            barmode: 'group'
+        };
+        
+        Plotly.newPlot('manufacturing-process-chart', [trace1, trace2], layout, {responsive: true});
+    }
+    
+    // Initialize charts when analytics section is visible
+    const analyticsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    createInventoryChart();
+                    createTransportationChart();
+                    createSupplierChart();
+                    createForecastChart();
+                }, 500);
+                analyticsObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    const analyticsSection = document.querySelector('#analytics');
+    if (analyticsSection) {
+        analyticsObserver.observe(analyticsSection);
+    }
+    
+    // Initialize manufacturing chart when section is visible
+    const manufacturingObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    createManufacturingProcessChart();
+                }, 500);
+                manufacturingObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    const manufacturingSection = document.querySelector('#manufacturing-demo');
+    if (manufacturingSection) {
+        manufacturingObserver.observe(manufacturingSection);
+    }
+    
+    // Populate certifications
     const certifications = [
         {
             name: "Google AI Essentials",
@@ -133,7 +433,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Enhanced click effects
     document.querySelectorAll('.btn-effect').forEach(button => {
         button.addEventListener('click', function(e) {
-            // Add a small delay to show the effect before navigation
             if (this.href && !this.href.includes('#')) {
                 e.preventDefault();
                 setTimeout(() => {
@@ -143,30 +442,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Intersection Observer for animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-    
-    // Observe elements for animation
-    document.querySelectorAll('.project-card, .cert-card, .timeline-item').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-    
-    // Dynamic counter animation for stats
+    // Counter animations for stats
     function animateCounter(element, target, duration = 2000) {
         let start = 0;
         const increment = target / (duration / 16);
@@ -207,14 +483,5 @@ document.addEventListener('DOMContentLoaded', function() {
     if (heroSection) {
         heroObserver.observe(heroSection);
     }
-    
-    // Add click tracking for portfolio analytics
-    document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
-        button.addEventListener('click', function() {
-            const action = this.textContent.trim();
-            const section = this.closest('section')?.id || 'unknown';
-            console.log(`Portfolio Analytics: ${action} clicked in ${section} section`);
-        });
-    });
     
 });
