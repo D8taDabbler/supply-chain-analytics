@@ -3,139 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andy Chiang - Supply Chain Analytics Portfolio</title>
-    <meta name="description" content="Logistics & Supply Chain Specialist specializing in AI-driven process optimization and sustainability.">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>John Doe | Supply Chain Professional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --navy: #0A1128;
+            --teal: #5BC0BE;
+            --slate: #3A506B;
+            --white: #FFFFFF;
+        }
+
+        body {
+            background: var(--navy);
+            color: var(--white);
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Social Links Styling */
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        .social-link {
+            font-size: 2rem;
+            color: var(--teal);
+            transition: 0.3s ease;
+            border: 2px solid var(--white);
+            border-radius: 50%;
+            padding: 0.8rem;
+        }
+
+        .social-link:hover {
+            color: var(--white);
+            transform: scale(1.1);
+        }
+
+        /* Work Experience Section */
+        .experience {
+            background: var(--slate);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        /* Admin Panel Styles */
+        #adminPanel {
+            background: rgba(0,0,0,0.9);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 2rem;
+            border-radius: 10px;
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="nav-container">
-            <h1 class="nav-brand">Andy Chiang</h1>
-            <nav class="nav-menu">
-                <a href="#about" data-feather="user" class="nav-icon" title="About" aria-label="About Section"></a>
-                <a href="#projects" data-feather="briefcase" class="nav-icon" title="Projects" aria-label="Projects Section"></a>
-                <a href="#analytics" data-feather="bar-chart-2" class="nav-icon" title="Analytics" aria-label="Analytics Dashboard"></a>
-                <a href="#experience" data-feather="clock" class="nav-icon" title="Experience" aria-label="Experience Timeline"></a>
-                <a href="#certifications" data-feather="award" class="nav-icon" title="Certifications" aria-label="Certifications Section"></a>
-                <a href="#contact" data-feather="mail" class="nav-icon" title="Contact" aria-label="Contact Information"></a>
-            </nav>
-        </div>
+    <!-- Header Section -->
+    <header>
+        <h1>John Doe</h1>
+        <h2>Supply Chain & Logistics Professional</h2>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Andy Chiang</h1>
-                <h2>Supply Chain Analytics Specialist</h2>
-                <h3>AI-Driven Optimization | Sustainability Innovation | Military Precision</h3>
-                <p>Transforming supply chain performance through data-driven insights and military-grade operational excellence.</p>
-                <div class="hero-stats">
-                    <div class="stat" data-target="8.7">
-                        <span class="stat-number">8.7</span>
-                        <span class="stat-label">Inventory Turnover</span>
-                    </div>
-                    <div class="stat" data-target="98.3">
-                        <span class="stat-number">98.3%</span>
-                        <span class="stat-label">On-Time Delivery</span>
-                    </div>
-                    <div class="stat" data-target="2.05">
-                        <span class="stat-number">$2.05</span>
-                        <span class="stat-label">Cost/Mile</span>
-                    </div>
-                </div>
-                <div class="hero-buttons">
-                    <a href="#analytics" class="btn-primary btn-effect">View Analytics Dashboard</a>
-                    <a href="https://www.linkedin.com/in/a8c/" class="btn-secondary btn-effect" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-                </div>
-            </div>
+    <!-- Work Experience -->
+    <section id="experience">
+        <div class="experience">
+            <h3>Yong Qi Solutions - Manufacturing Operations Specialist</h3>
+            <p>2017-2022 | Taipei City, Taiwan</p>
+            <ul>
+                <li>CNC machinery operation</li>
+                <li>Strategic supplier partnerships</li>
+            </ul>
         </div>
+        
+        <!-- Add other experiences following same structure -->
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about fade-in-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <!-- Content remains same but with added aria-labels -->
-            </div>
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="mailto:contact@email.com" class="social-link"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel">
+        <input type="password" id="adminPass" placeholder="Enter Admin Password">
+        <button onclick="verifyAdmin()">Access</button>
+        <div id="adminContent" style="display:none;">
+            <!-- Admin form elements here -->
         </div>
-    </section>
-
-    <!-- Analytics Dashboard -->
-    <section id="analytics" class="analytics fade-in-section">
-        <div class="container">
-            <h2>Supply Chain Performance Dashboard</h2>
-            <!-- Dashboard content with working internal links -->
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects fade-in-section">
-        <div class="container">
-            <h2>Featured Analytics Projects</h2>
-            <div class="projects-grid">
-                <!-- Revised project cards with working links -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Supply Chain KPI Dashboard</h3>
-                        <span class="project-type">Power BI Analytics</span>
-                    </div>
-                    <!-- ... -->
-                    <div class="project-links">
-                        <a href="#analytics" class="btn-primary btn-effect">View Dashboard</a>
-                        <a href="https://github.com/D8taDabbler/supply-chain-dashboard" class="btn-secondary btn-effect" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-                    </div>
-                </div>
-                <!-- Other project cards updated similarly -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience fade-in-section">
-        <!-- Content remains same -->
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications fade-in-section">
-        <!-- Content remains same -->
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact fade-in-section">
-        <div class="container">
-            <div class="contact-content">
-                <h2>Let's Connect</h2>
-                <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/a8c/" class="contact-link btn-effect" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                        <span class="link-icon" data-feather="linkedin"></span>
-                        <span class="link-text">LinkedIn Profile</span>
-                    </a>
-                    <a href="https://github.com/D8taDabbler" class="contact-link btn-effect" target="_blank" rel="noopener noreferrer" aria-label="GitHub Portfolio">
-                        <span class="link-icon" data-feather="github"></span>
-                        <span class="link-text">GitHub Portfolio</span>
-                    </a>
-                    <a href="mailto:contact@andychiang.tech" class="contact-link btn-effect" aria-label="Email Contact">
-                        <span class="link-icon" data-feather="mail"></span>
-                        <span class="link-text">Email Contact</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <script>
-        feather.replace({ 
-            'width': 24,
-            'height': 24,
-            'stroke-width': 1.5,
-            'color': '#3498db'
-        });
+        // Admin Panel Functionality
+        function verifyAdmin() {
+            const password = document.getElementById('adminPass').value;
+            if(password === 'yourSecurePassword') {
+                document.getElementById('adminContent').style.display = 'block';
+            }
+        }
+
+        // Initialize local storage
+        if(!localStorage.getItem('portfolioData')) {
+            localStorage.setItem('portfolioData', JSON.stringify({
+                profilePic: '',
+                socialLinks: {},
+                contactInfo: {}
+            }));
+        }
     </script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
