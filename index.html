@@ -6,57 +6,9 @@
     <title>Andy Chiang - Supply Chain & AI Marketing Professional</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-navy: #0A1128;
-            --accent-teal: #5BC0BE;
-            --light-gray: #F8F9FA;
-            --section-spacing: 4rem 0;
-            --card-spacing: 2rem;
-            --line-height: 1.7;
-        }
-
-        .section {
-            padding: var(--section-spacing);
-        }
-
-        .experience-card {
-            background: rgba(255,255,255,0.05);
-            padding: var(--card-spacing);
-            margin: 2rem 0;
-            border-radius: 8px;
-            border-left: 4px solid var(--accent-teal);
-        }
-
-        .job-title {
-            color: var(--accent-teal);
-            margin-bottom: 0.5rem;
-        }
-
-        .job-achievements li {
-            margin: 0.8rem 0;
-            padding-left: 1.2rem;
-            position: relative;
-        }
-
-        .job-achievements li::before {
-            content: "▹";
-            position: absolute;
-            left: 0;
-            color: var(--accent-teal);
-        }
-
-        .skill-tag {
-            display: inline-block;
-            margin: 0.3rem;
-            padding: 0.5rem 1rem;
-            background: rgba(91,192,190,0.2);
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">Andy Chiang</a>
@@ -68,93 +20,73 @@
         </div>
     </nav>
 
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2 class="section-title">Licenses & Certifications</h2>
-            <div class="certifications-grid">
-                <a href="https://app.hubspot.com/academy/achievements/68x2tk41/en/1/andy-chiang/hubspot-marketing-hub-software" 
-                   class="certification-card" target="_blank" rel="noopener">
-                    <img src="assets/images/hubspot-logo.png" alt="HubSpot" class="cert-logo">
-                    <div class="cert-info">
-                        <h4>HubSpot Marketing Hub Software</h4>
-                        <p class="cert-issuer">HubSpot Academy</p>
-                        <p class="cert-date">May 2024</p>
-                    </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="assets/images/profile.jpg" alt="Professional Headshot" class="profile-img">
+            <h1>Andy Chiang</h1>
+            <h2>Supply Chain Optimization & AI Marketing Specialist</h2>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
                 </a>
-
-                <a href="https://app.hubspot.com/academy/achievements/hh7wz05s/en/1/andy-chiang/inbound-marketing" 
-                   class="certification-card" target="_blank" rel="noopener">
-                    <img src="assets/images/hubspot-logo.png" alt="HubSpot" class="cert-logo">
-                    <div class="cert-info">
-                        <h4>Inbound Marketing</h4>
-                        <p class="cert-issuer">HubSpot Academy</p>
-                        <p class="cert-date">2024</p>
-                    </div>
+                <a href="https://github.com/d8tadabbler" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
                 </a>
-
-                <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/RYIRYWNJK4PB" 
-                   class="certification-card" target="_blank" rel="noopener">
-                    <img src="assets/images/google-logo.png" alt="Google" class="cert-logo">
-                    <div class="cert-info">
-                        <h4>Google Business Intelligence</h4>
-                        <p class="cert-issuer">Google</p>
-                        <p class="cert-date">2024</p>
-                    </div>
+                <a href="mailto:your.email@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
                 </a>
-
-                <!-- Add remaining certifications following same structure -->
-                
             </div>
         </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-timeline">
+            
+            <!-- HubSpot Experience -->
+            <div class="experience-card">
+                <img src="assets/images/hubspot-logo.png" alt="HubSpot" class="company-logo">
+                <h3>AI Marketing Intern</h3>
+                <div class="job-meta">
+                    <span>HubSpot</span>
+                    <span>Apr 2025 - Present</span>
+                    <span>Remote</span>
+                </div>
+                <ul class="job-achievements">
+                    <li>Designed AI-driven marketing campaigns achieving 35% CTR increase</li>
+                    <li>Implemented predictive analytics for customer segmentation</li>
+                    <li>Optimized HubSpot workflows reducing campaign setup time by 40%</li>
+                </ul>
+                <div class="job-skills">
+                    <span class="skill-tag">AI Marketing</span>
+                    <span class="skill-tag">Data Analytics</span>
+                    <span class="skill-tag">Marketing Automation</span>
+                </div>
+            </div>
+
+            <!-- Add all other experiences following the same structure -->
+            
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
                 
-                <div class="experience-item">
-                    <div class="experience-card">
-                        <img src="assets/images/hubspot-logo.png" alt="HubSpot" class="company-logo">
-                        <h3 class="job-title">AI Marketing Intern</h3>
-                        <h4 class="company-name">HubSpot</h4>
-                        <p class="job-meta">Apr 2025 – Present · 3 mos · Remote</p>
-                        <div class="job-description">
-                            <ul class="job-achievements">
-                                <li>Designed multi-channel campaigns using HubSpot's AI features</li>
-                                <li>Implemented data-driven marketing initiatives from concept to completion</li>
-                                <li>Applied analytics for audience segmentation and personalization</li>
-                            </ul>
-                        </div>
-                        <div class="job-skills">
-                            <span class="skill-tag">AI Marketing</span>
-                            <span class="skill-tag">Marketing Automation</span>
-                            <span class="skill-tag">Client Relations</span>
-                        </div>
+                <a href="https://app.hubspot.com/academy/achievements/68x2tk41/en/1/andy-chiang/hubspot-marketing-hub-software" 
+                   class="certification-card" target="_blank">
+                    <img src="assets/images/hubspot-logo.png" alt="HubSpot">
+                    <div class="cert-info">
+                        <h4>HubSpot Marketing Hub Software</h4>
+                        <p>Issued May 2024</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="experience-item">
-                    <div class="experience-card">
-                        <h3 class="job-title">Manufacturing Operations Specialist</h3>
-                        <h4 class="company-name">Yong Qi Solutions</h4>
-                        <p class="job-meta">Nov 2017 – Jun 2022 · 4 yrs 8 mos · Taipei City, Taiwan</p>
-                        <div class="job-description">
-                            <ul class="job-achievements">
-                                <li>Operated CNC machinery for industrial equipment assembly</li>
-                                <li>Coordinated global material procurement and shipments</li>
-                                <li>Optimized manufacturing workflows reducing production time by 18%</li>
-                            </ul>
-                        </div>
-                        <div class="job-skills">
-                            <span class="skill-tag">Supply Chain Management</span>
-                            <span class="skill-tag">CNC Operations</span>
-                            <span class="skill-tag">Process Improvement</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Add all other experiences following same structure -->
+                <!-- Add all other certifications following same pattern -->
                 
             </div>
         </div>
@@ -163,21 +95,19 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
+            <h2 class="section-title">Contact</h2>
             <div class="contact-content">
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/yourusername" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:your.email@example.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+                <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
             </div>
         </div>
     </section>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel">
+        <!-- Admin form elements here -->
+    </div>
+
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
